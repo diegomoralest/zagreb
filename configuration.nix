@@ -56,7 +56,11 @@ in {
         kvm
         manpages          # system manpages (not included by default)
         mkpasswd          # UNIX password creator
+        myPkgs.syntastic
         myPkgs.vim        # slight improvement over vi
+        myPkgs.vimshell 
+        myPkgs.vundle 
+        myPkgs.youcompleteme 
         netcat
         nettools
         nmap              # stats about clients in the network
