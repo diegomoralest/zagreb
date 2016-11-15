@@ -13,4 +13,4 @@ let
   vimshell = pkgs.vimPlugins.vimshell;
   vundle = pkgs.vimPlugins.vundle;
 in
-{ inherit vim fast-init youcompleteme vimshell vundle; }
+{ inherit vim youcompleteme vimshell vundle; }
