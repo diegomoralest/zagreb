@@ -1,0 +1,27 @@
+{ config, lib, pkgs, ... }:
+
+boot.loader.grub = {
+ # Use grub 2 as boot loader.
+ enable = true;
+ version = 2;
+
+ # Define on which hard drive you want to install Grub.
+  device = "/dev/sda";
+};
+
+fileSystems."/" = {
+  device = "/dev/sda2";
+  fsType = "ext4";
+};
+
+fileSystems."/boot/" = {
+  device = "/dev/sda1";
+  fsType = "ext4";
+};
+
+swapDevices = [
+  {
+    device = "/dev/sda3";
+  }
+];
+
