@@ -2,8 +2,7 @@
 
 with pkgs;
 let
-
-  vim = pkgs.vim_configurable.override = {
+  vim = pkgs.vim_configurable.override {
     config.vim = {
       python = true;
     };
